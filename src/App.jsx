@@ -4,7 +4,7 @@ import Countdown from "./components/Countdown";
 import OurStory from "./components/OurStory";
 import EventDetails from "./components/EventDetails";
 import Gallery from "./components/Gallery";
-import RSVP from "./components/RSVP";
+// import RSVP from "./components/RSVP";
 import GiftRegistry from "./components/GiftRegistry";
 import Location from "./components/Location";
 import FAQ from "./components/FAQ";
@@ -22,7 +22,7 @@ export default function App() {
         <OurStory />
         <EventDetails />
         <Gallery />
-        <RSVP />
+        {/* <RSVP /> */}
         <GiftRegistry />
         <Location />
         <FAQ />
