@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Countdown from "./components/Countdown";
 import OurStory from "./components/OurStory";
-// import Gallery from "./components/Gallery";
+import Gallery from "./components/Gallery";
 import RSVP from "./components/RSVP";
 import GiftRegistry from "./components/GiftRegistry";
 import Location from "./components/Location";
@@ -20,7 +20,7 @@ export default function App() {
         <Hero />
         <Countdown />
         <OurStory />
-        {/* <Gallery /> */}
+        <Gallery />
         <RSVP />
         <GiftRegistry />
         <Location />
