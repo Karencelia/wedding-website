@@ -28,7 +28,7 @@ function TimeUnit({ value, label, inView, delay }) {
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="relative">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full border border-rose-dusty/20 flex items-center justify-center bg-white/50 backdrop-blur-sm">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full border border-gold/20 flex items-center justify-center bg-white/50 backdrop-blur-sm">
           <span className="font-heading text-2xl sm:text-3xl md:text-5xl text-charcoal">
             {String(value).padStart(2, "0")}
           </span>
@@ -102,9 +102,9 @@ export default function Countdown() {
           }`}
         >
           <div className="flex items-center justify-center gap-4">
-            <div className="w-16 h-[1px] bg-rose-dusty/30" />
-            <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/30" />
-            <div className="w-16 h-[1px] bg-rose-dusty/30" />
+            <div className="w-16 h-[1px] bg-gold/30" />
+            <div className="w-1.5 h-1.5 rounded-full bg-gold/30" />
+            <div className="w-16 h-[1px] bg-gold/30" />
           </div>
         </div>
       </div>

@@ -7,16 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        'rose-dusty': '#C98F8F',
-        'rose-light': '#E8C4C4',
-        'rose-dark': '#A67070',
+        'gold': '#C9A96E',
+        'gold-light': '#E0CCA0',
+        'gold-dark': '#A68B4B',
+        'lemon': '#FFF9E6',
+        'lemon-dark': '#F5EDCF',
+        'wedding-green': '#5B7553',
+        'wedding-green-light': '#8FAE7E',
+        'wedding-blue': '#3D5A80',
+        'wedding-blue-light': '#6B8DB2',
         'cream': '#FDF8F4',
         'cream-dark': '#F5EDE4',
         'warm-gray': '#6B6560',
         'warm-gray-light': '#9B9590',
         'charcoal': '#2D2926',
-        'gold': '#C9A96E',
-        'gold-light': '#E0CCA0',
       },
       fontFamily: {
         'heading': ['"Cormorant Garamond"', 'serif'],

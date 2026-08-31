@@ -34,9 +34,9 @@ export default function GiftRegistry() {
             }`}
           >
             <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
-              <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/40" />
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gold/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
             </div>
           </div>
         </div>
@@ -48,8 +48,8 @@ export default function GiftRegistry() {
           }`}
         >
           {/* Icon */}
-          <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-rose-dusty/20 flex items-center justify-center bg-rose-light/20">
-            <svg className="w-7 h-7 text-rose-dusty" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-gold/20 flex items-center justify-center bg-gold-light/20">
+            <svg className="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
             </svg>
           </div>
@@ -60,7 +60,7 @@ export default function GiftRegistry() {
 
           {/* Bank Details Placeholder */}
           {giftRegistry.bankDetails ? (
-            <div className="mt-8 p-6 bg-cream/60 rounded-lg border border-rose-light/30">
+            <div className="mt-8 p-6 bg-cream/60 rounded-lg border border-gold-light/30">
               <h4 className="font-heading text-xl text-charcoal mb-4">Bank Transfer Details</h4>
               <div className="space-y-2 font-body text-sm text-warm-gray">
                 <p><span className="text-charcoal font-medium">Bank:</span> {giftRegistry.bankDetails.bankName}</p>
@@ -72,9 +72,9 @@ export default function GiftRegistry() {
               </div>
             </div>
           ) : (
-            <div className="mt-8 p-6 bg-cream/60 rounded-lg border border-rose-light/30">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full border border-rose-dusty/15 flex items-center justify-center">
-                <svg className="w-5 h-5 text-rose-dusty/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="mt-8 p-6 bg-cream/60 rounded-lg border border-gold-light/30">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full border border-gold/15 flex items-center justify-center">
+                <svg className="w-5 h-5 text-gold/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
               </div>
@@ -93,7 +93,7 @@ export default function GiftRegistry() {
               {giftRegistry.items.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 bg-cream/60 rounded-lg border border-rose-light/30 text-left"
+                  className="p-4 bg-cream/60 rounded-lg border border-gold-light/30 text-left"
                 >
                   <h5 className="font-heading text-lg text-charcoal">{item.name}</h5>
                   <p className="font-body text-xs text-warm-gray mt-1">{item.description}</p>

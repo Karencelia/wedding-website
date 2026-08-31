@@ -6,11 +6,11 @@
 const weddingData = {
   // Couple Information
   bride: {
-    firstName: "Bride's Name",
+    firstName: "Rebecca Oluwaseun",
     lastName: "",
   },
   groom: {
-    firstName: "Groom's Name",
+    firstName: "Sampson Othuke",
     lastName: "",
   },
 
@@ -24,7 +24,7 @@ const weddingData = {
   // Venue Information
   venue: {
     name: "Federal Marriage Registry, Ikoyi",
-    address: "Ikorodu Crescent, Dolphin Estate (facing Nigeria Correctional Services), Lagos 106104",
+    address: "Alagbon Close, Ikoyi, Lagos.",
     city: "Lagos",
     country: "Nigeria",
     googleMapsUrl: "https://www.google.com/maps/search/Federal+Marriage+Registry+Ikoyi+Lagos",
@@ -35,25 +35,18 @@ const weddingData = {
   story: {
     title: "Our Story",
     paragraphs: [
-      "Every love story is beautiful, but ours is our favorite. Our journey began with a simple moment that changed everything — a chance encounter that led to a lifetime of love.",
-      "From our first conversation to the countless adventures we've shared, each moment has strengthened our bond and deepened our love. Through laughter and tears, through calm and storm, we found in each other a love that feels like home.",
-      "Now, as we prepare to begin this new chapter together, we are filled with gratitude for the journey that brought us here and excitement for the future that awaits us.",
+      "#AChapterCalledForever began at a usual meeting at the Kingdom Hall, an ordinary setting that soon became the nursery for something extraordinary. It was Rebecca's first time attending her sister's congregation, and during the meeting, she noticed Sampson, who was a new brother in the congregation. She liked his comments and simply wondered, \"Who is this person?\" She asked her sister, who told him he was the new brother.",
+      "When the meeting ended, Sampson shared a warm greeting with Rebecca; that was how it started. Not long after, Sampson reached out to Rebecca. Their conversations were random and friendly at first. He would call to check how she was doing, and they continued talking for a while.",
+      "Then, all of a sudden, he went blank. The calls stopped. Rebecca didn't think much of it at first. To her, they had simply been having random conversations and building a friendship. But after some time, she reached out to him herself. She called him, and the conversation continued. Rebecca reached out a few more times after that, and then Sampson started calling again; calling, calling, calling, still calling.",
+      "What began with a meeting, a new brother, a simple greeting, and a few random conversations gradually became something more. And today, Sampson and Rebecca are celebrating the love that grew from that simple beginning. This is their story. This is #AChapterCalledForever. \u2764\uFE0F",
     ],
   },
 
   // Wedding Hashtag
-  hashtag: "#OurWedding",
+  hashtag: "#AChapterCalledForever",
 
   // Event Schedule
-  events: [
-    {
-      title: "Wedding Ceremony",
-      date: "24th September 2026",
-      time: "Time to be announced",
-      venue: "Federal Marriage Registry, Ikoyi",
-      address: "Ikorodu Crescent, Dolphin Estate (facing Nigeria Correctional Services), Lagos 106104",
-    },
-  ],
+  events: [],
 
   // Gallery Images
   // Replace these placeholder paths with actual photo paths
@@ -68,63 +61,36 @@ const weddingData = {
 
   // RSVP Configuration
   rsvp: {
-    deadline: null, // e.g., "2026-09-01"
-    deadlineDisplay: "To be announced",
-    backendEndpoint: null, // Set when backend is ready
-    fields: {
-      guestName: true,
-      email: true,
-      phone: true,
-      numberOfGuests: true,
-      attendance: true,
-      message: true,
-    },
+    deadline: "2026-09-20",
+    deadlineDisplay: "20th September 2026",
+    formUrl: "https://forms.gle/MrPAADpm7didTL5B6",
+    contacts: [
+      { name: "Japh", phone: "09015058699" },
+      { name: "Dicta", phone: "09067776169" },
+    ],
   },
 
   // Gift Registry
   giftRegistry: {
     title: "Gift Registry",
     message: "Your presence is the greatest gift we could ask for. However, if you wish to honor us with a gift, we have established a small registry for your convenience.",
-    bankDetails: null, // Placeholder - bank details to be added later
-    // bankDetails: {
-    //   bankName: "",
-    //   accountName: "",
-    //   accountNumber: "",
-    //   sortCode: "",
-    // },
-    items: [], // Placeholder for gift registry items
+    bankDetails: {
+      bankName: "UBA",
+      accountName: "Rebecca Paul",
+      accountNumber: "2070190683",
+    },
+    items: [],
   },
 
   // FAQ Section
-  faqs: [
-    {
-      question: "What is the dress code?",
-      answer: "Dress code details will be announced closer to the wedding date. We encourage elegant and formal attire for the celebration.",
-    },
-    {
-      question: "Is there parking available at the venue?",
-      answer: "Parking is available at the Federal Marriage Registry. We recommend arriving early to ensure convenient parking.",
-    },
-    {
-      question: "Can I bring a plus one?",
-      answer: "Please indicate the number of guests attending when you submit your RSVP. We will do our best to accommodate all requests.",
-    },
-    {
-      question: "When is the RSVP deadline?",
-      answer: "The RSVP deadline will be announced soon. Please submit your response as early as possible to help us with planning.",
-    },
-    {
-      question: "Will there be a reception after the ceremony?",
-      answer: "Details about the reception will be shared once arrangements are finalized. Please stay tuned for updates.",
-    },
-  ],
+  faqs: [],
 
   // Music Configuration
   music: {
-    enabled: true, // Set to false to disable the music player
-    audioFile: "/music/Timi_Dakolo_Iyawo_Mi_.mp3",
-    autoplay: false, // Note: browsers block autoplay without user interaction
-    title: "Wedding Song",
+    enabled: true,
+    audioFile: "/music/Tchella_-_Ife_In_Love__CeeNaija.com_.mp3",
+    autoplay: false,
+    title: "If\u00e9 (In Love) by Tchella",
   },
 
   // Social Media / Contact (placeholder)

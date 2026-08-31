@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* Names */}
         <h3 className="font-heading text-3xl sm:text-4xl text-white mb-2">
-          {weddingData.groom.firstName} <span className="text-rose-dusty font-light">&</span> {weddingData.bride.firstName}
+          {weddingData.groom.firstName} <span className="text-gold font-light">&</span> {weddingData.bride.firstName}
         </h3>
 
         {/* Date */}
@@ -19,7 +19,7 @@ export default function Footer() {
         {/* Decorative divider */}
         <div className="flex items-center justify-center gap-4 mb-8">
           <div className="w-12 h-[1px] bg-white/10" />
-          <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/40" />
+          <div className="w-1.5 h-1.5 rounded-full bg-gold/40" />
           <div className="w-12 h-[1px] bg-white/10" />
         </div>
 
@@ -28,10 +28,9 @@ export default function Footer() {
           {[
             { label: "Home", href: "#home" },
             { label: "Our Story", href: "#story" },
-            { label: "Events", href: "#events" },
             { label: "Gallery", href: "#gallery" },
             { label: "RSVP", href: "#rsvp" },
-            { label: "FAQ", href: "#faq" },
+            { label: "Location", href: "#location" },
           ].map((link) => (
             <a
               key={link.href}
@@ -40,7 +39,7 @@ export default function Footer() {
                 e.preventDefault();
                 document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="font-body text-xs uppercase tracking-wider text-white/40 hover:text-rose-dusty transition-colors duration-300"
+              className="font-body text-xs uppercase tracking-wider text-white/40 hover:text-gold transition-colors duration-300"
             >
               {link.label}
             </a>
@@ -55,7 +54,7 @@ export default function Footer() {
                 href={weddingData.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-rose-dusty/40 hover:text-rose-dusty transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold/40 hover:text-gold transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -68,7 +67,7 @@ export default function Footer() {
                 href={weddingData.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-rose-dusty/40 hover:text-rose-dusty transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold/40 hover:text-gold transition-all duration-300"
                 aria-label="Twitter"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -81,7 +80,7 @@ export default function Footer() {
                 href={weddingData.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-rose-dusty/40 hover:text-rose-dusty transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold/40 hover:text-gold transition-all duration-300"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

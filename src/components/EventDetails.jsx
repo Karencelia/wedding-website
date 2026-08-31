@@ -32,9 +32,9 @@ export default function EventDetails() {
             }`}
           >
             <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
-              <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/40" />
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gold/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ export default function EventDetails() {
               style={{ transitionDelay: `${(index + 2) * 200}ms` }}
             >
               {/* Event Icon */}
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-rose-dusty/20 flex items-center justify-center bg-rose-light/20">
-                <svg className="w-7 h-7 text-rose-dusty" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-gold/20 flex items-center justify-center bg-gold-light/20">
+                <svg className="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
@@ -64,21 +64,21 @@ export default function EventDetails() {
               {/* Event Details */}
               <div className="space-y-3">
                 <div className="flex items-center justify-center gap-3">
-                  <svg className="w-4 h-4 text-rose-dusty flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   <span className="font-body text-sm text-warm-gray">{event.date}</span>
                 </div>
 
                 <div className="flex items-center justify-center gap-3">
-                  <svg className="w-4 h-4 text-rose-dusty flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="font-body text-sm text-warm-gray">{event.time}</span>
                 </div>
 
                 <div className="flex items-start justify-center gap-3 pt-2">
-                  <svg className="w-4 h-4 text-rose-dusty flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>

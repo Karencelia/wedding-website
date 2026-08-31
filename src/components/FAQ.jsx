@@ -5,7 +5,7 @@ import weddingData from "../data/weddingData";
 function FAQItem({ faq, index, isOpen, onToggle, inView }) {
   return (
     <div
-      className={`border-b border-rose-light/30 last:border-0 transition-all duration-700 ${
+      className={`border-b border-gold-light/30 last:border-0 transition-all duration-700 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
       style={{ transitionDelay: `${(index + 2) * 100}ms` }}
@@ -15,16 +15,16 @@ function FAQItem({ faq, index, isOpen, onToggle, inView }) {
         className="w-full flex items-center justify-between py-5 px-2 text-left group"
         aria-expanded={isOpen}
       >
-        <span className="font-heading text-lg sm:text-xl text-charcoal group-hover:text-rose-dusty transition-colors pr-4">
+        <span className="font-heading text-lg sm:text-xl text-charcoal group-hover:text-gold transition-colors pr-4">
           {faq.question}
         </span>
         <div
-          className={`w-8 h-8 rounded-full border border-rose-dusty/20 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-            isOpen ? "bg-rose-dusty/10 rotate-180" : "group-hover:border-rose-dusty/40"
+          className={`w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+            isOpen ? "bg-gold/10 rotate-180" : "group-hover:border-gold/40"
           }`}
         >
           <svg
-            className="w-4 h-4 text-rose-dusty"
+            className="w-4 h-4 text-gold"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -82,9 +82,9 @@ export default function FAQ() {
             }`}
           >
             <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
-              <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/40" />
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gold/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
             </div>
           </div>
         </div>
@@ -118,12 +118,12 @@ export default function FAQ() {
             {weddingData.social.email ? (
               <a
                 href={`mailto:${weddingData.social.email}`}
-                className="text-rose-dusty hover:text-rose-dark underline underline-offset-4 transition-colors"
+                className="text-gold hover:text-gold-dark underline underline-offset-4 transition-colors"
               >
                 contact us
               </a>
             ) : (
-              <span className="text-rose-dusty italic">reach out to us directly</span>
+              <span className="text-gold italic">reach out to us directly</span>
             )}
             .
           </p>

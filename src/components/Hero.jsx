@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import weddingData from "../data/weddingData";
-import heroImage from "../assets/images/bride&groom.jpg";
+import heroImage from "../assets/images/hero-image.jpeg";
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -22,8 +22,7 @@ export default function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative flex items-start justify-center overflow-hidden"
-      style={{ minHeight: "150vh" }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -31,7 +30,7 @@ export default function Hero() {
           src={heroImage}
           alt="Bride and Groom"
           className="w-full h-full object-cover"
-          style={{ objectPosition: "50% 50%" }}
+          style={{ objectPosition: "50% 30%" }}
         />
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/40 to-charcoal/60" />
@@ -39,22 +38,17 @@ export default function Hero() {
 
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Top-left decorative circle */}
         <div className="absolute -top-20 -left-20 w-40 h-40 sm:-top-32 sm:-left-32 sm:w-64 sm:h-64 rounded-full border border-white/10" />
         <div className="absolute -top-16 -left-16 w-32 h-32 sm:-top-24 sm:-left-24 sm:w-48 sm:h-48 rounded-full border border-white/5" />
-
-        {/* Bottom-right decorative circle */}
         <div className="absolute -bottom-20 -right-20 w-48 h-48 sm:-bottom-32 sm:-right-32 sm:w-80 sm:h-80 rounded-full border border-white/10" />
         <div className="absolute -bottom-16 -right-16 w-36 h-36 sm:-bottom-24 sm:-right-24 sm:w-60 sm:h-60 rounded-full border border-white/5" />
-
-        {/* Floating decorative dots */}
         <div className="absolute top-1/4 left-4 sm:left-10 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white/20 animate-pulse-soft" />
         <div className="absolute top-1/3 right-4 sm:right-16 w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-white/15 animate-pulse-soft" style={{ animationDelay: "1s" }} />
         <div className="absolute bottom-1/4 left-1/4 w-1 h-1 rounded-full bg-white/10 animate-pulse-soft" style={{ animationDelay: "2s" }} />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto pt-28 pb-16">
+      <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto pt-24 pb-16">
         {/* Ornamental line */}
         <div
           className={`transition-all duration-1000 delay-200 ${
@@ -84,7 +78,7 @@ export default function Hero() {
           }`}
         >
           <span className="block">{weddingData.groom.firstName}</span>
-          <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-rose-light my-1 sm:my-3 font-light italic">
+          <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gold-light my-1 sm:my-3 font-light italic">
             &
           </span>
           <span className="block">{weddingData.bride.firstName}</span>
@@ -118,14 +112,8 @@ export default function Hero() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          {/* <button onClick={scrollToRSVP} className="btn-primary w-full sm:w-auto">
+          <button onClick={scrollToRSVP} className="btn-primary w-full sm:w-auto">
             RSVP Now
-          </button> */}
-          <button
-            onClick={(e) => { e.preventDefault(); document.querySelector("#gifts")?.scrollIntoView({ behavior: "smooth" }); }}
-            className="btn-primary w-full sm:w-auto"
-          >
-            Gift Registry
           </button>
           <button
             onClick={scrollToLocation}

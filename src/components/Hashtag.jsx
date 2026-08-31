@@ -47,16 +47,16 @@ export default function Hashtag() {
         >
           <button
             onClick={copyHashtag}
-            className="group relative px-8 py-4 bg-white/60 border border-rose-light/40 rounded-lg hover:border-rose-dusty/50 hover:bg-white/80 transition-all duration-300 cursor-pointer"
+            className="group relative px-8 py-4 bg-white/60 border border-gold-light/40 rounded-lg hover:border-gold/50 hover:bg-white/80 transition-all duration-300 cursor-pointer"
           >
-            <span className="font-heading text-2xl sm:text-3xl md:text-4xl text-rose-dusty group-hover:text-rose-dark transition-colors">
+            <span className="font-heading text-2xl sm:text-3xl md:text-4xl text-gold group-hover:text-gold-dark transition-colors">
               {weddingData.hashtag}
             </span>
             <div className="mt-2 flex items-center justify-center gap-2">
-              <svg className="w-3 h-3 text-warm-gray-light group-hover:text-rose-dusty transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-3 h-3 text-warm-gray-light group-hover:text-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
               </svg>
-              <span className="font-body text-[10px] uppercase tracking-wider text-warm-gray-light group-hover:text-rose-dusty transition-colors">
+              <span className="font-body text-[10px] uppercase tracking-wider text-warm-gray-light group-hover:text-gold transition-colors">
                 Click to copy
               </span>
             </div>

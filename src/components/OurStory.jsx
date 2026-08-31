@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import weddingData from "../data/weddingData";
+import heroImage from "../assets/images/hero-image.jpeg";
 
 export default function OurStory() {
   const [ref, inView] = useInView({
@@ -32,9 +33,9 @@ export default function OurStory() {
             }`}
           >
             <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
-              <div className="w-1.5 h-1.5 rounded-full bg-rose-dusty/40" />
-              <div className="w-12 h-[1px] bg-rose-dusty/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gold/40" />
+              <div className="w-12 h-[1px] bg-gold/40" />
             </div>
           </div>
         </div>
@@ -47,20 +48,15 @@ export default function OurStory() {
               inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <div className="aspect-[3/4] rounded-lg bg-gradient-to-br from-rose-light/40 to-cream-dark flex items-center justify-center relative overflow-hidden">
-              {/* Placeholder for couple's photo */}
-              <div className="text-center p-8">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-rose-dusty/20 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-rose-dusty/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <p className="font-heading text-lg text-warm-gray italic">Our Photo</p>
-              </div>
-
+            <div className="aspect-[3/4] rounded-lg overflow-hidden relative">
+              <img
+                src={heroImage}
+                alt="Sampson & Rebecca"
+                className="w-full h-full object-cover"
+              />
               {/* Decorative corner accents */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-rose-dusty/20" />
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-rose-dusty/20" />
+              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-gold/30" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-gold/30" />
             </div>
           </div>
 
@@ -82,7 +78,7 @@ export default function OurStory() {
             </div>
 
             {/* Decorative quote */}
-            <div className="mt-8 pl-6 border-l-2 border-rose-dusty/30">
+            <div className="mt-8 pl-6 border-l-2 border-gold/30">
               <p className="font-heading text-xl md:text-2xl text-charcoal italic">
                 &ldquo;Whatever our souls are made of, yours and mine are the same.&rdquo;
               </p>

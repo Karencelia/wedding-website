@@ -37,7 +37,7 @@
   }
 
   ::selection {
-    background-color: #E8C4C4;
+    background-color: #E0CCA0;
     color: #2D2926;
   }
 }
@@ -52,18 +52,22 @@
   }
 
   .section-divider {
-    @apply w-16 h-[1px] bg-rose-dusty mx-auto my-6;
+    @apply w-16 h-[1px] bg-gold mx-auto my-6;
   }
 
   .btn-primary {
-    @apply inline-block px-8 py-3 bg-rose-dusty text-white font-body font-medium text-sm
-           uppercase tracking-wider rounded-sm hover:bg-rose-dark transition-all duration-300
-           hover:shadow-lg hover:shadow-rose-dusty/20;
+    @apply inline-block px-8 py-3 bg-gold text-white font-body font-medium text-sm
+           uppercase tracking-wider rounded-sm transition-all duration-300
+           hover:shadow-lg hover:shadow-gold/20;
+  }
+
+  .btn-primary:hover {
+    background-color: #A68B4B;
   }
 
   .btn-outline {
-    @apply inline-block px-8 py-3 border border-rose-dusty text-rose-dusty font-body font-medium text-sm
-           uppercase tracking-wider rounded-sm hover:bg-rose-dusty hover:text-white transition-all duration-300;
+    @apply inline-block px-8 py-3 border border-gold text-gold font-body font-medium text-sm
+           uppercase tracking-wider rounded-sm hover:bg-gold hover:text-white transition-all duration-300;
   }
 
   .glass-card {
@@ -96,10 +100,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C98F8F;
+  background: #C9A96E;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A67070;
+  background: #A68B4B;
 }
