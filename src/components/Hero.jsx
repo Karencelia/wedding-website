@@ -22,13 +22,22 @@ export default function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative flex items-start justify-center"
+      className="relative flex items-start justify-center min-h-screen md:min-h-0"
     >
-      {/* Background Image - drives section height naturally */}
+      {/* Mobile: image covers full screen */}
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src={heroImage}
+          alt="Bride and Groom"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Desktop: image drives section height naturally */}
       <img
         src={heroImage}
         alt="Bride and Groom"
-        className="w-full h-auto block"
+        className="hidden md:block w-full h-auto"
       />
 
       {/* Dark overlay for text readability */}
