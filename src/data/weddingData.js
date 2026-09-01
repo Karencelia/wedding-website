@@ -10,7 +10,7 @@ const weddingData = {
     lastName: "",
   },
   groom: {
-    firstName: "Sampson Othuke",
+    firstName: "Gideon Othuke",
     lastName: "",
   },
 
@@ -35,10 +35,10 @@ const weddingData = {
   story: {
     title: "Our Story",
     paragraphs: [
-      "#AChapterCalledForever began at a usual meeting at the Kingdom Hall, an ordinary setting that soon became the nursery for something extraordinary. It was Rebecca's first time attending her sister's congregation, and during the meeting, she noticed Sampson, who was a new brother in the congregation. She liked his comments and simply wondered, \"Who is this person?\" She asked her sister, who told him he was the new brother.",
-      "When the meeting ended, Sampson shared a warm greeting with Rebecca; that was how it started. Not long after, Sampson reached out to Rebecca. Their conversations were random and friendly at first. He would call to check how she was doing, and they continued talking for a while.",
-      "Then, all of a sudden, he went blank. The calls stopped. Rebecca didn't think much of it at first. To her, they had simply been having random conversations and building a friendship. But after some time, she reached out to him herself. She called him, and the conversation continued. Rebecca reached out a few more times after that, and then Sampson started calling again; calling, calling, calling, still calling.",
-      "What began with a meeting, a new brother, a simple greeting, and a few random conversations gradually became something more. And today, Sampson and Rebecca are celebrating the love that grew from that simple beginning. This is their story. This is #AChapterCalledForever. \u2764\uFE0F",
+      "#AChapterCalledForever began at a usual meeting at the Kingdom Hall, an ordinary setting that soon became the nursery for something extraordinary. It was Rebecca's first time attending her sister's congregation, and during the meeting, she noticed Gideon, who was a new brother in the congregation. She liked his comments and simply wondered, \"Who is this person?\" She asked her sister, who told him he was the new brother.",
+      "When the meeting ended, Gideon shared a warm greeting with Rebecca; that was how it started. Not long after, Gideon reached out to Rebecca. Their conversations were random and friendly at first. He would call to check how she was doing, and they continued talking for a while.",
+      "Then, all of a sudden, he went blank. The calls stopped. Rebecca didn't think much of it at first. To her, they had simply been having random conversations and building a friendship. But after some time, she reached out to him herself. She called him, and the conversation continued. Rebecca reached out a few more times after that, and then Gideon started calling again; calling, calling, calling, still calling.",
+      "What began with a meeting, a new brother, a simple greeting, and a few random conversations gradually became something more. And today, Gideon and Rebecca are celebrating the love that grew from that simple beginning. This is their story. This is #AChapterCalledForever. \u2764\uFE0F",
     ],
   },
 

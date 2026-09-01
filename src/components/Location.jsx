@@ -66,7 +66,7 @@ export default function Location() {
             {/* Venue Details */}
             <div className="flex flex-col justify-center">
               <div className="glass-card">
-                <div className="w-14 h-14 mb-6 rounded-full border border-gold/20 flex items-center justify-center bg-gold-light/20">
+                <div className="w-14 h-14 mb-6 mx-auto sm:mx-0 rounded-full border border-gold/20 flex items-center justify-center bg-gold-light/20">
                   <svg className="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -78,8 +78,8 @@ export default function Location() {
                 </h3>
 
                 <div className="space-y-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <svg className="w-4 h-4 text-gold flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="flex items-center sm:items-start gap-3">
+                    <svg className="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
                     <p className="font-body text-sm text-warm-gray leading-relaxed">

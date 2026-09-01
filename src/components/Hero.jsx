@@ -22,19 +22,17 @@ export default function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex items-start justify-center"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Bride and Groom"
-          className="w-full h-full object-cover"
-          style={{ objectPosition: "50% 30%" }}
-        />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/40 to-charcoal/60" />
-      </div>
+      {/* Background Image - drives section height naturally */}
+      <img
+        src={heroImage}
+        alt="Bride and Groom"
+        className="w-full h-auto block"
+      />
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/40 to-charcoal/60" />
 
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -48,7 +46,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto pt-24 pb-16">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-start text-center px-5 sm:px-6 pt-28 pb-16">
         {/* Ornamental line */}
         <div
           className={`transition-all duration-1000 delay-200 ${
@@ -112,8 +110,14 @@ export default function Hero() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <button onClick={scrollToRSVP} className="btn-primary w-full sm:w-auto">
+          {/* <button onClick={scrollToRSVP} className="btn-primary w-full sm:w-auto">
             RSVP Now
+          </button> */}
+          <button
+            onClick={(e) => { e.preventDefault(); document.querySelector("#gifts")?.scrollIntoView({ behavior: "smooth" }); }}
+            className="btn-primary w-full sm:w-auto"
+          >
+            Gift Registry
           </button>
           <button
             onClick={scrollToLocation}

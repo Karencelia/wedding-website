@@ -51,7 +51,7 @@ export default function OurStory() {
             <div className="aspect-[3/4] rounded-lg overflow-hidden relative">
               <img
                 src={heroImage}
-                alt="Sampson & Rebecca"
+                alt="Gideon & Rebecca"
                 className="w-full h-full object-cover"
               />
               {/* Decorative corner accents */}
@@ -67,14 +67,23 @@ export default function OurStory() {
             }`}
           >
             <div className="space-y-6">
-              {weddingData.story.paragraphs.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="font-body text-warm-gray leading-relaxed text-sm md:text-base"
-                >
-                  {paragraph}
-                </p>
-              ))}
+              {weddingData.story.paragraphs.map((paragraph, index) => {
+                const parts = paragraph.split(/(#AChapterCalledForever)/g);
+                return (
+                  <p
+                    key={index}
+                    className="font-body text-warm-gray leading-relaxed text-sm md:text-base"
+                  >
+                    {parts.map((part, i) =>
+                      part === "#AChapterCalledForever" ? (
+                        <strong key={i} className="font-semibold text-charcoal">{part}</strong>
+                      ) : (
+                        part
+                      )
+                    )}
+                  </p>
+                );
+              })}
             </div>
 
             {/* Decorative quote */}
